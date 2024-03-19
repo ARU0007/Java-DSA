@@ -24,6 +24,20 @@ public class SinglyLInkedList {
         } while (n == 1);
 
     }
+    //creating a method for traverse the LL-------------------------->
+    public void traverse() {
+        Node temp = head;
+
+        if (head == null) {
+            System.out.println("LinkeList does not exist");
+        } else {
+            System.out.println("singly linklist--------->");
+            while (temp != null) {
+                System.out.print(temp.data + "-");
+                temp = temp.next;
+            }
+        }
+    }
 
 
 
