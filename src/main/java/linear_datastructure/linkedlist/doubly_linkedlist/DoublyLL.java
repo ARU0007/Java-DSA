@@ -4,6 +4,27 @@ public class DoublyLL {
     Node head = null;
     Node tail = null;
 
+    //creation----------------------------------------------
+    public void creation() {
+        int data, n, m, p;
+        Scanner sc = new Scanner(System.in);
+        do {
+            System.out.println("Enter data");
+            data = sc.nextInt();
+            Node new_node = new Node(data);
+            if (head == null) {
+                head = new_node;
+            } else {
+                head.previous = new_node;
+                new_node.next = head;
+                head = new_node;
+            }
+            System.out.println("Press 1 to enter more data");
+            n = sc.nextInt();
+        } while (n == 1);
+
+    }
+
 
 
     static class Node {
