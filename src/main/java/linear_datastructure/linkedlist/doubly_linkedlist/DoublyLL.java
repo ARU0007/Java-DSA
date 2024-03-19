@@ -25,6 +25,19 @@ public class DoublyLL {
 
     }
 
+    //traverser-----------------------------------
+    public void traverser() {
+        Node temp = head;
+        if (head == null) {
+            System.out.println("LinkedList doesn't exist");
+        } else {
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+    }
+
 
 
     static class Node {
