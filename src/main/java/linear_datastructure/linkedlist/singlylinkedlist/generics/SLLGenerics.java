@@ -29,11 +29,24 @@ public class SLLGenerics<T> {
 
         } while (n == 1);
     }
+    //Traverse function.
+
+    public void traverse() {
+        Node<T> temp = head;
+        if (head == null) {
+            System.out.print("Empty linked list");
+
+        } else {
+            while (temp != null) {
+                System.out.print(temp.data + "->");
+                temp = temp.next;
+
+            }
+
+        }
 
 
-
-
-
+    }
 
 
 
