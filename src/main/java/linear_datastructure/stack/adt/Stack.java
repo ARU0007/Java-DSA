@@ -1,4 +1,4 @@
-package main.java.linear_datastructure.Stack.adt;
+package main.java.linear_datastructure.stack.adt;
 
 public interface Stack {
 
