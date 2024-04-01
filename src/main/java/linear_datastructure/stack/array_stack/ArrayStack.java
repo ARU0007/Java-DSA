@@ -1,6 +1,6 @@
-package main.java.linear_datastructure.Stack.array_stack;
+package main.java.linear_datastructure.stack.array_stack;
 
-import main.java.linear_datastructure.Stack.adt.Stack;
+import main.java.linear_datastructure.stack.adt.Stack;
 
 public class ArrayStack implements Stack {
     public int[] array;
