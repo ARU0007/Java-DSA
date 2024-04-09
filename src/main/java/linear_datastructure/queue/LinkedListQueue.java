@@ -24,6 +24,19 @@ public class LinkedListQueue {
         rear = newNode;
         size++;
     }
+    // Method to remove the data
+    public void deQueue() {
+        if (isEmpty()) {
+            System.out.println("UnderFlow");
+            return;
+        }
+        Node temp = front;
+        front = front.next;
+        if (front == null) {
+            rear = null;
+        }
+        size--;
+    }
 
 
 
