@@ -63,6 +63,11 @@ public class LinkedListQueue {
         return front.data;
     }
 
+    //Method to get the Queue's size.
+    public int size() {
+        return size;
+    }
+
 
     private static class Node {
         int data;
