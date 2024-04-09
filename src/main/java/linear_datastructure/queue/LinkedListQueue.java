@@ -56,6 +56,12 @@ public class LinkedListQueue {
         return size == 0;
 
     }
+    public int peek() {
+        if (isEmpty()) {
+            System.err.println("Queue is Empty");
+        }
+        return front.data;
+    }
 
 
     private static class Node {
