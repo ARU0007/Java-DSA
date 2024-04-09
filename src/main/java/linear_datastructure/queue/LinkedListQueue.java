@@ -38,6 +38,18 @@ public class LinkedListQueue {
         size--;
     }
 
+    //Method to display the queue.
+    public void display() {
+        if (isEmpty()) {
+            System.err.println("Queue is empty");
+        }
+        System.out.println("Queue:");
+        Node current = front;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+    }
 
 
     private static class Node {
