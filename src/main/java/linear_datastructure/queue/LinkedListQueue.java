@@ -51,6 +51,12 @@ public class LinkedListQueue {
         }
     }
 
+    //Method to check if Qurue us empty
+    public boolean isEmpty() {
+        return size == 0;
+
+    }
+
 
     private static class Node {
         int data;
