@@ -13,6 +13,18 @@ public class LinkedListQueue {
 
     }
 
+    //Method to insert data.
+    public void enQueue(int data) {
+        Node newNode = new Node(data);
+        if (isEmpty()) {
+            front = newNode;
+        } else {
+            rear.next = newNode;
+        }
+        rear = newNode;
+        size++;
+    }
+
 
 
     private static class Node {
